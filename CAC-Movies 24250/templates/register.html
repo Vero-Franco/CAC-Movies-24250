@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- vinculación con estilos y favicon -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <title>Regitro-CAC-Movies</title>
+
+    <!-- vinculación con google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">   
+</head>
+
+<body >
+    <header>
+        <nav>
+            <!-- Logo -->
+            <div id="logo">
+                <a href="/">
+                    <i class="fas fa-film"></i>
+                    <span class="logo-text">CAC - Movies</span>
+                </a>
+            </div>
+    </header>
+
+    <main>
+        <!-- formulario -->
+        <section id="form-wrapper">
+            <form action="#" method="get" id="form-register" novalidate>
+                 <h2>Registro</h2>
+                 <!-- campos -->
+                 <div class="form-control">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" required id="name">
+                 </div>
+                 <div class="error" id="error-name"></div>
+                 <div class="form-control">
+                    <label for="last-name">Apellido</label>
+                    <input type="text" name="last-name" required id="last-name">
+                 </div>
+                 <div class="error" id="error-last-name"></div>
+                 <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required id="email">
+                 </div>
+                 <div class="error" id="error-email"></div>
+                 <div class="form-control">
+                    <label for="passw">Contraseña</label>
+                    <input type="password" name="passw" required id="passw">
+                 </div>
+                 <div class="error" id="error-password"></div>
+                 <div class="form-control">
+                    <label for="date">Fecha de nacimiento</label>
+                    <input type="date" name="date" required id="date">
+                 </div>
+                 <div class="form-control">
+                    <select name="country" id="country" class="form-select">
+                        <option value="">Pais</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="UR">Uruguay</option>
+                        <option value="CH">Chile</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CO">Colombia</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="PE">Perú</option>    
+                    </select>
+                 </div>
+                 <!-- checkbox -->
+                 <div class="form-terms">
+                    <div class="terms">
+                        <input type="checkbox" id="terms">
+                        <label>Acepto términos y condiciones</label>
+                    </div>
+                 </div>
+                 <!-- botón de la acción -->
+                 <button type="submit">Registrate</button>
+                 <button type="reset">Borrar todo</button>
+                 <!-- zona de ayuda -->
+                 <div class="form-help">
+                    <a href="#">¿Necesitás ayuda?</a>
+                 </div>
+
+
+
+            </form>
+        </section>
+    </main>
+
+<!-- sección del pie de página -->
+    <footer>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Ayuda</a>
+        <a href="#">Administrador de películas</a>
+    </footer>
+</body>
+
+</html>
